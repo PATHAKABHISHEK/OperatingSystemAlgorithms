@@ -2,6 +2,8 @@
 
 #include <stdio.h>
 
+void bubble_sort(int array[], int process);
+
 void main(){
 
     int process;
@@ -24,4 +26,16 @@ void main(){
         scanf("%d", &process_burst_time[j]);
     }
 
+}
+
+void bubble_sort(int array[], int process){
+    int temp;
+    for(int i = 0; i < process; i++)
+    for(int j = 0; j < process-1; j++){
+        if(array[j]>array[j+1]){
+            temp = array[j+1];
+            array[j+1] = array[j];
+            array[j] = temp;
+        }
+    }
 }
