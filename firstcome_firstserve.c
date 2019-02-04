@@ -12,6 +12,16 @@ void main(){
     printf("Enter the no. of processes");
     scanf("%d", &process);
 
-    
+    // Taking arrival times of the processes
+
+    for(int i = 0; i < process; i++){
+        scanf("%d", &process_arrival_time[i]); 
+    }
+
+    // Taking burst times of the processes
+
+    for(int j = 0; j < process ; j++){
+        scanf("%d", &process_burst_time[j]);
+    }
 
 }
