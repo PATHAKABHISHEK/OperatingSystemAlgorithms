@@ -26,6 +26,14 @@ void main(){
         scanf("%d", &process_burst_time[j]);
     }
 
+    // Sorting arrival times
+
+    bubble_sort(process_arrival_time, process);
+
+    // Sorting burst times
+
+    bubble_sort(process_burst_time, process);
+
 }
 
 void bubble_sort(int array[], int process){
